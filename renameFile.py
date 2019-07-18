@@ -11,6 +11,7 @@ file_list = os.listdir(file_dir)
 for file_name in file_list:
     #name_reg = re.compile(r'(^\[电影天堂www.dy2018.com\]|^\[阳光电影www.ygdy8.net\].|^阳光电影www.ygdy8.net|^\[阳光电影www.ygdy8.com\].'
     #                      r'|^阳光电影www.ygdy8.com.)')
+    #拼接  正则表达式
     name_reg = re.compile(r'(\[电影天堂www.dy2018.com\]|\[最新电影www.66ys.tv\]|.电影天堂.www.dy2018.com|\[飘花www.piaohua.com\])')
     name_replace = name_reg.sub('', file_name)
     #print(file_name)
