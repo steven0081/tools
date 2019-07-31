@@ -8,12 +8,13 @@ import os
 #1、读取图片文件
 file_path = r'G:\PythonProject\tools_git\pic'
 
-file_list =['1.jpg', '2.jpg', '3.jpg']
+pic_list =['1.jpg', '2.jpg', '3.jpg']
 #结果输出文件
 result_file = os.path.join(file_path, 'temp.txt')
 
-for file in file_list:
+for file in pic_list:
     file_name = os.path.join(file_path, file)
+    #读取图片文件并进行转码
     with open(file_name, 'rb') as f:
         pic1 = f.read()
     data = dict()
