@@ -2,7 +2,7 @@ import os
 
 #处理小说中的广告
 
-path=r'G:\PythonProject\paChong\books\推理'
+path = r'G:\PythonProject\paChong\books\推理'
 
 new_path = r'G:\PythonProject\paChong\temp'
 for a, b, c in os.walk(path):
