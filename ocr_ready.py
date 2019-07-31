@@ -8,7 +8,7 @@ import os
 #1、读取图片文件
 file_path = r'G:\PythonProject\tools_git\pic'
 
-file_list =['1.jpg', '2.jpg']
+file_list =['1.jpg', '2.jpg', '3.jpg']
 #结果输出文件
 result_file = os.path.join(file_path, 'temp.txt')
 

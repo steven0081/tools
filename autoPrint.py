@@ -5,6 +5,8 @@ import win32api
 import win32print
 import os
 
+
+#成批打印word文件
 def printer_loading(filename):
     open(filename, "r")
     win32api.ShellExecute(
