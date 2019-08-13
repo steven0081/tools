@@ -22,7 +22,7 @@ def printer_loading(filename):
         0
     )
 
-path=r'I:\PycharmProjects\aboutWorkGit\ok'
+path=r'H:\目录'
 for a, b, c in os.walk(path):
     print(c)
 for i in c:
