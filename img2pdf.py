@@ -11,6 +11,8 @@ import os, re
 import time
 from reportlab.lib.units import inch
 
+#将图片转换为PDF文件
+
 #获得目录中所有图片文件列表
 def getFilelist(path):
     #print(path)
@@ -19,7 +21,7 @@ def getFilelist(path):
         print(c)
     for i in c:
         f = os.path.join(path, i)
-        if f.endswith("JPG"):
+        if f.endswith("jpg"):
             # print(f)
             files.append(f)
     return files
@@ -53,7 +55,7 @@ def main(myPath):
     files = []
     files = getFilelist(myPath)
     print(files)
-    output_file_name = 'out.pdf'
+    output_file_name = 'out_1.pdf'
     # save_file_name = 'ex.pdf'
     # doc = SimpleDocTemplate(save_file_name, pagesize=A1,
     #                     rightMargin=72, leftMargin=72,
@@ -85,5 +87,5 @@ def main(myPath):
     print('Done')
 
 if __name__ == '__main__':
-    path = r'F:\img'
+    path = r'G:\PythonProject\tools_git\pic'
     main(path)
