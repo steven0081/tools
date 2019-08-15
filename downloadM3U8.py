@@ -58,8 +58,8 @@ def download(url):
 
         if "EXTINF" in line:  # 找ts地址并下载
             unknow = False
-            #pd_url = url.rsplit("/", 1)[0] + "/" + file_line[index + 1]  # 拼出ts片段的URL
-            pd_url = 'https://youku.haokzy-tudou.com' + file_line[index + 1]  # 拼出ts片段的URL
+            pd_url = url.rsplit("/", 1)[0] + "/" + file_line[index + 1]  # 拼出ts片段的URL
+            #pd_url = 'https://youku.pmkiki.com/' + file_line[index + 1]  # 拼出ts片段的URL
             print(pd_url)
             time.sleep(3)
             res = requests.get(pd_url, headers=headers)
@@ -91,4 +91,4 @@ def merge_file(path):
     os.rename("new.tmp", "new.mp4")
 
 if __name__ == '__main__':
-    download("https://youku.haokzy-tudou.com/201908/10/IEqh31hr/index.m3u8")
+    download("https://youku.pmkiki.com/20190807/pxPG3Eiy/1000kb/hls/index.m3u8")
