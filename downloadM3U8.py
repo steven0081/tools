@@ -91,4 +91,6 @@ def merge_file(path):
     os.rename("new.tmp", "new.mp4")
 
 if __name__ == '__main__':
-    download("https://youku.pmkiki.com/20190807/pxPG3Eiy/1000kb/hls/index.m3u8")
+    #视频下载链接   《寄生虫》
+    url = "https://youku.pmkiki.com/20190807/pxPG3Eiy/1000kb/hls/index.m3u8"
+    download(url)
