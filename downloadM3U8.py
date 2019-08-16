@@ -61,7 +61,7 @@ def download(url):
             pd_url = url.rsplit("/", 1)[0] + "/" + file_line[index + 1]  # 拼出ts片段的URL
             #pd_url = 'https://youku.pmkiki.com/' + file_line[index + 1]  # 拼出ts片段的URL
             print(pd_url)
-            time.sleep(3)
+            time.sleep(2)
             res = requests.get(pd_url, headers=headers)
             c_fule_name = file_line[index + 1].rsplit("/", 1)[-1]
 
