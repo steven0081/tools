@@ -21,7 +21,7 @@ def getFilelist(path):
         print(c)
     for i in c:
         f = os.path.join(path, i)
-        if f.endswith("jpg"):
+        if f.endswith("jpeg"):
             # print(f)
             files.append(f)
     return files
@@ -53,8 +53,10 @@ def rotate_img_to_proper(image):
 
 def main(myPath):
     files = []
+    #获取文件列表
     files = getFilelist(myPath)
     print(files)
+    #设置输出文件名
     output_file_name = 'out_1.pdf'
     # save_file_name = 'ex.pdf'
     # doc = SimpleDocTemplate(save_file_name, pagesize=A1,
@@ -87,5 +89,7 @@ def main(myPath):
     print('Done')
 
 if __name__ == '__main__':
-    path = r'G:\PythonProject\tools_git\pic'
+    #设置图片路径
+    path = r'G:\PythonProject\WebCrawler\img'
+    #调用主函数
     main(path)
