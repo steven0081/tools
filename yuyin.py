@@ -11,7 +11,7 @@ secret_key ='Yg0UZapvh2QYhna1bB2R2mQuaXgFOBWK'
 
 client = AipSpeech(app_id,api_key,secret_key)
 
-with open('凡人修仙之仙界篇\\仙界篇外传一.txt','r') as f:
+with open('越女剑.txt','r') as f:
     str_list  =f.readlines()
     f.close()
 for str in str_list:
