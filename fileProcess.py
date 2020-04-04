@@ -1,6 +1,6 @@
 import os
 
-#处理小说中的广告
+#去除小说中的广告
 
 path = r'G:\PythonProject\paChong\books\推理'
 

@@ -5,6 +5,8 @@ import win32api
 import win32print
 import os
 
+
+#成批打印word文件
 def printer_loading(filename):
     open(filename, "r")
     win32api.ShellExecute(
@@ -20,7 +22,7 @@ def printer_loading(filename):
         0
     )
 
-path=r'I:\PycharmProjects\aboutWorkGit\ok'
+path=r'H:\目录'
 for a, b, c in os.walk(path):
     print(c)
 for i in c:
