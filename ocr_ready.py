@@ -7,8 +7,11 @@ import os
 #图片转文字 程序 主要调用百度  AI 项目接口实现
 #1、读取图片文件
 file_path = r'G:\PythonProject\tools_git\pic'
-
-pic_list =['tt.jpg']
+pic_list =[]
+#把图片文件组装进图片文件列表
+for i in range(1):
+    pic_list.append('ysdg-'+str(i)+'.jpg')
+print(pic_list)
 #结果输出文件
 result_file = os.path.join(file_path, 'temp.txt')
 

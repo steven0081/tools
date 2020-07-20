@@ -1,4 +1,4 @@
-#安装 pip install reportlab
+#安装PDF转换工具 pip install reportlab
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch, cm
 from reportlab.lib.pagesizes import letter
