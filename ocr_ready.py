@@ -9,8 +9,8 @@ import os
 file_path = r'G:\PythonProject\tools_git\pic'
 pic_list =[]
 #把图片文件组装进图片文件列表
-for i in range(1):
-    pic_list.append('ysdg-'+str(i)+'.jpg')
+for i in range(12):
+    pic_list.append('zx-'+str(i)+'.jpg')
 print(pic_list)
 #结果输出文件
 result_file = os.path.join(file_path, 'temp.txt')

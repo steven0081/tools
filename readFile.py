@@ -7,7 +7,7 @@ import re
 
 file_dir = os.path.join('/mnt', 'download', 'TDDOWNLOAD')
 filedata_dir = os.path.join('/var/www/html', 'moviesite', 'data')
-filedata = filedata_dir+'movieName.txt'
+filedata = filedata_dir+'/movieName.txt'
 print(filedata)
 file_list = os.listdir(file_dir)
 #print (file_list)
@@ -25,7 +25,7 @@ for file_name in file_list:
 nameList.sort()
 fileList.sort()
 with open(filedata, 'w') as movie_name:
-    for i, j in nameList, fileList:
+    for i, j in zip(nameList, fileList):
         filmname = i+'+'+j
         print(filmname)
         movie_name.write(filmname + '\n')
