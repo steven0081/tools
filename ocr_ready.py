@@ -3,14 +3,20 @@ import base64
 import requests
 import urllib
 import os
+import glob
 
 #图片转文字 程序 主要调用百度  AI 项目接口实现
 #1、读取图片文件
-file_path = r'G:\PythonProject\tools_git\pic'
+file_path = r'g:\imgs'
 pic_list =[]
 #把图片文件组装进图片文件列表
-for i in range(12):
-    pic_list.append('zx-'+str(i)+'.jpg')
+#for i in range(12):
+#    pic_list.append('zx-'+str(i)+'.jpg')
+
+#把图片文件组装进图片文件列表
+for imgfile in sorted(glob.glob(file_path + "\*.png")):
+    pic_list.append(imgfile)
+
 print(pic_list)
 #结果输出文件
 result_file = os.path.join(file_path, 'temp.txt')
