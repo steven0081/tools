@@ -1,3 +1,7 @@
+#安装模块
+# python -m pip install pypiwin32
+# pip install baidu-aip
+
 import os
 import wave
 from aip import AipSpeech
@@ -66,8 +70,11 @@ def speak(str):
     speak_out.Speak(str)
     winsound.PlaySound(str, winsound.SND_ASYNC)
 
-#speak('你好，我是小言！')
 
+
+speak('你好，我是智能小管家！这个娃娃赶快起床了')
+
+'''
 while True:
     my_record()
     request_str = listen()
@@ -80,5 +87,5 @@ while True:
     elif request_str == '退出程序。':
         break
 
-
+'''
 
